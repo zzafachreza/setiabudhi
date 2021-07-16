@@ -1,0 +1,185 @@
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+
+@font-face {
+  font-family: NunitoRegular;
+  src: url(../fonts/Nunito-Regular.ttf);
+}
+
+@font-face {
+  font-family: NunitoBold;
+  src: url(../fonts/Nunito-Bold.ttf);
+}
+
+body{
+	font-family: NunitoRegular
+}
+
+
+
+  .AppInput{
+  	display: block;
+  	height: 40px;
+  	width: 100%;
+  	border-width: 0;
+  	color: #6e6969;
+    padding-left: 5%;
+  	font-family: NunitoRegular;
+    background-color:#FFF;
+  
+    color: #000;
+
+    border-bottom:1px solid black;
+  }
+
+  .AppInput:focus{
+      outline: none; 
+  	 color: #1B2755;
+     border-bottom:1px solid #F47721;
+  }
+
+
+
+  .AppLabel{
+  color: #1B2755;
+
+
+  }
+
+
+  .iconInput{
+    position: absolute;top: 50%;left: 3%;color:#1B2755;
+  }
+
+
+  .AppButton-primary{
+
+  	background-color: #1B2755;
+    border: 1px solid #1B2755;
+  	padding: 6px;
+  	border-radius: 4px;
+  	color: white;
+  	
+    transition-property: transform;
+    transition-duration: 1s;
+
+
+  }
+    .AppButton-primary:hover{
+
+  	background-color: #fff;
+    border: 1px solid #1B2755;
+  	text-decoration: none;
+  	padding: 6px;
+    color: #1B2755;
+  	border-radius: 4px;
+
+ 
+
+  }
+
+  a{
+    color:#1B2755; 
+  }
+
+ .AppButton-secondary{
+
+  	background-color: #F47721;
+     border: 1px solid #F47721;
+  	padding: 6px;
+  	border-radius: 5px;
+  	color: white;
+
+
+  }
+
+    .AppButton-secondary:hover{
+
+  	background-color: #fff;
+  	text-decoration: none;
+    border: 1px solid #F47721;
+    padding: 6px;
+     color: #F47721;
+  	border-radius: 5px;
+  
+
+  }
+
+
+ .AppButton-dark{
+
+    background-color: #95a5a6;
+     border: 1px solid #95a5a6;
+    padding: 6px;
+    border-radius: 5px;
+    color: white;
+
+
+  }
+
+    .AppButton-dark:hover{
+
+    background-color: #fff;
+    text-decoration: none;
+    border: 1px solid #95a5a6;
+    padding: 6px;
+     color: #95a5a6;
+    border-radius: 5px;
+  
+
+  }
+
+
+
+#loader{
+  display: none;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  padding-left: 40%;
+  padding-top: 20%;
+  background-color:white;
+  opacity: 0.8;
+}
+
+/* Define an animation behavior */
+@keyframes spinner {
+  to { transform: rotate(360deg); }
+}
+/* This is the class name given by the Font Awesome component when icon contains 'spinner' */
+#loader img{
+  /* Apply 'spinner' keyframes looping once every second (1s)  */
+  animation: spinner 2s linear infinite;
+}
+
+#flash-message-error{
+  display: none;
+  width: 100%;
+  height:50px;
+  position: absolute;
+  padding: 10px;
+  text-align: center;
+  background-color: #f74239;
+  color: white;
+}
+
+#flash-message-success{
+  display: none;
+  width: 100%;
+  height:50px;
+  position: absolute;
+  padding: 10px;
+  text-align: center;
+  background-color: #47c958;
+  color: white;
+}
